@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Cal{
+	public static void main(String args[])
+	{
+	double x,y,z;
+	Scanner in=new Scanner(System.in);
+	System.out.println("Enter first no: ");
+	x=in.nextFloat();
+		System.out.println("Enter second no: ");
+		y=in.nextFloat();
+		 
+		 System.out.println("1:add\n2:subtract\n3:multiply\n4:divide\n5:modulas");
+		 int ch=in.nextInt();
+		 switch(ch)
+		 {
+		 case 1:
+		   z=x+y;
+		   System.out.println(z);
+				 break;
+		 case 2:
+		   z=x-y;
+		   System.out.println(z);
+				  break;
+		 case 3:
+		   z=x*y;
+		   System.out.println(z);
+				  break;
+		 case 4:
+		   z=x/y;
+		   System.out.println(z);
+				  break;
+      	 case 5:
+		   z=x%y;
+		   System.out.println(z);
+				  break;
+		 default:
+		   break;
+		 }
+	}
+}
