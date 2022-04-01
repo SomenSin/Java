@@ -1,0 +1,30 @@
+import java.util.*;
+class c1{
+ public int x=10;
+ protected int y=20;
+ int z=5;
+ private int a=60;
+ 
+ public void math()
+ {
+  System.out.println("value of x: "+x);
+  System.out.println("value of y: "+y);
+  System.out.println("value of z: "+z);
+  System.out.println("value of a: "+a);
+  }
+}
+
+public class Am{
+   public static void main(String args[])
+   {
+     c1 c=new c1();
+	 c.math();
+	 System.out.println(c.x);
+	 System.out.println(c.y);
+	 	 System.out.println(c.z);
+		 	// System.out.println(c.a);
+   }
+ }
+	 
+ 
+  
