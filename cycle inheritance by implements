@@ -1,0 +1,30 @@
+interface Bicycle{ 
+void applybreak(int dec);
+void speedup(int inc);
+void display();
+}
+
+class Avoncycle implements Bicycle{
+int speed =8;
+public void applybreak(int dec)
+{
+  speed =speed-dec;
+}
+public void speedup(int inc)
+{
+ speed=speed+inc;
+}
+	public void display()
+	{
+		System.out.println(speed);
+	}
+}
+	class Ac {
+		 public static void main(String args[]){
+			 Avoncycle A=new Avoncycle();
+			 A.applybreak(5);
+			 A.speedup(50);
+			 A.display();
+		 }
+	}
+			 
